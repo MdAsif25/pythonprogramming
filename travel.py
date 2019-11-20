@@ -1,11 +1,17 @@
+
 name=input("enter your name:")
 age=input("enter your age:")
 phone=input("enter your phone number:")
 mail=input("enter your mail:")
-source=input("source:")
-destination=input("destination:")
-if(source==destination):
-    print("don't select the same location")
+run=True
+while run:
+  run=False
+  source=input("source:")
+  destination=input("destination:")
+  if(source==destination):
+      print("don't select the same location")
+      run=True
+      continue
 if(source=="salem"):
     source=int(0)
 if(source=="pachal"):
